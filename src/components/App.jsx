@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import SearchBar from './SearchBar/SearchBar';
-import ImageGallery from './ImageGallery/ImageGallery';
-import Loader from './Loader/Loader';
-import Button from './Button/Button';
-import Modal from './Modal/Modal';
+import SearchBar from '../components/SearchBar/SearchBar';
+import ImageGallery from '../components/ImageGallery/ImageGallery';
+import Loader from '../components/Loader/Loader';
+import Button from '../components/Button/Button';
+import Modal from '../components/Modal/Modal';
 
 const API_KEY = '36230432-188f02e7fd3eb7806444db018';
 const BASE_URL = 'https://pixabay.com/api/';
