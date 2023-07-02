@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './SearchBar.module.css';
 
 export const SearchBar = ({ onSubmit }) => {
   const handleSubmit = e => {
@@ -7,19 +8,20 @@ export const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <header className="searchbar">
-      <form className="form" onSubmit={handleSubmit}>
-        <button type="submit" className="button">
-          <span className="button-label">Search</span>
-        </button>
-        <input
-          className="input"
-          type="text"
-          autoComplete="off"
-          autoFocus
-          placeholder="Search images and photos"
-          name="searchInput"
-        />
+    <header className={styles.searchbar}>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <div className={styles.searchContainer}>
+          <span className={`material-icons ${styles.searchIcon}`}>search</span>
+
+          <input
+            className={styles.input}
+            type="text"
+            autoComplete="off"
+            autoFocus
+            placeholder="Search images and photos"
+            name="searchInput"
+          />
+        </div>
       </form>
     </header>
   );

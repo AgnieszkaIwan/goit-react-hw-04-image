@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Modal.module.css';
 
 export const Modal = ({ imageUrl, onClose }) => {
   const handleClose = () => {
@@ -6,9 +7,9 @@ export const Modal = ({ imageUrl, onClose }) => {
   };
 
   return (
-    <div className="overlay" onClick={handleClose}>
-      <div className="modal">
-        <img src={imageUrl} alt="" />
+    <div className={styles.overlay} onClick={handleClose}>
+      <div className={styles.modal}>
+        <img src={imageUrl} alt="" className="modal-image" />
       </div>
     </div>
   );
